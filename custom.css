@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:400,600&display=swap');
+
+div#notebook {
+  background-color: #9e9e9e1c;
+  border-top: none;
+}
+
+div#notebook, div.CodeMirror, div.output_area pre, div.output_wrapper, div.prompt {
+  font-family: 'Fira Code', monospace;
+}
+
+div#notebook-container, div#maintoolbar, div#header, div.navbar-collapse {
+  background-color: white;
+  border-radius: 4px;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+a {
+  color: #268bd2;
+}
+
+.toolbar_info, .list_container {
+  color: #eee8d5;
+}
+
+div#maintoolbar, div#header-container, div.header-bar {
+  margin-bottom: 10px;
+  border-radius: 0;
+}
+
+div#notebook {
+  border-top: none;
+}
+
+div.input_prompt {
+  color: #d33682;
+}
+
+div.output_prompt {
+  color: #6c71c4;
+}
+
+div.input_area {
+  border-radius: 2px;
+  padding: 5px;
+  border: none;
+}
+
+div.output_area pre {
+  color: blue;
+  font-weight: semibold;
+}
+
+div.output_subarea {
+  font-weight: normal;
+  color: #93a1a1;
+}
+
+.rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td {
+  border: 1px #93a1a1 solid;
+  color: #93a1a1;
+}
+
+div.output_html {}
+
+table.dataframe tr {
+  border: 1px #93a1a1;
+}
+
+div.cell.selected {
+  border-radius: 0px;
+  border-color: white;
+}
+
+div.cell.selected::before {
+  background-color: blue;
+}
+
+div.cell.edit_mode {
+  border-radius: 0px;
+}
+
+div.text_cell_render, div.output_html {
+  color: #93a1a1;
+}
+
+span.ansiblack {
+  color: #073642;
+}
+
+span.ansiblue {
+  color: #2aa198;
+}
+
+span.ansigray {
+  color: #839496;
+}
+
+span.ansigreen {
+  color: #859900;
+}
+
+span.ansipurple {
+  color: #6c71c4;
+}
+
+span.ansired {
+  color: #dc322f;
+}
+
+span.ansiyellow {
+  color: #b58900;
+}
+
+div.output_stderr {
+  background-color: #dc322f;
+}
+
+div.output_stderr pre {
+  color: #eee8d5;
+  border: none;
+  font-weight: normal;
+}
+
+.edit_mode .cell.selected .CodeMirror-focused.cm-fat-cursor {
+  background-color: white !important;
+}
+
+/*  - Jupyter cell is in insert mode when code mirror */
+.edit_mode .cell.selected .CodeMirror-focused:not(.cm-fat-cursor) {
+  background-color: white !important;
+}
