@@ -52,7 +52,7 @@ div.input_area {
 
 div.output_area pre {
   color: blue;
-  font-weight: semibold;
+  font-weight: semibold !important;
 }
 
 div.output_subarea {
@@ -61,8 +61,8 @@ div.output_subarea {
 }
 
 .rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td {
-  border: 1px #93a1a1 solid;
-  color: #93a1a1;
+  border: 1px #93a1a157 solid;
+  color: black;
 }
 
 div.output_html {}
@@ -80,12 +80,9 @@ div.cell.selected::before {
   background-color: blue;
 }
 
-div.cell.edit_mode {
-  border-radius: 0px;
-}
-
 div.text_cell_render, div.output_html {
-  color: #93a1a1;
+  color: #848f8f;
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif !important;
 }
 
 span.ansiblack {
