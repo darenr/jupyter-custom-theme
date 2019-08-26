@@ -13,6 +13,7 @@ div#notebook-container, div#maintoolbar, div#header, div.navbar-collapse {
   background-color: white;
   border-radius: 4px;
   padding: 0;
+  transition: 0.15s all ease;
 }
 
 body {
@@ -72,13 +73,21 @@ table.dataframe tr {
 }
 
 div.cell.selected {
-  border-radius: 0px;
+  border-radius: 1px;
   border-color: white;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-right: 0px;
+}
+
+div.cell.selected div.input_area {
+  font-weight: bold;
 }
 
 div.cell.selected::before {
   background-color: blue;
 }
+
 
 div.text_cell_render, div.output_html {
   color: #848f8f;
@@ -125,9 +134,11 @@ div.output_stderr pre {
 
 .edit_mode .cell.selected .CodeMirror-focused.cm-fat-cursor {
   background-color: white !important;
+  transition: 0.15s all ease;
 }
 
 /*  - Jupyter cell is in insert mode when code mirror */
 .edit_mode .cell.selected .CodeMirror-focused:not(.cm-fat-cursor) {
   background-color: white !important;
+  transition: 0.15s all ease;
 }
