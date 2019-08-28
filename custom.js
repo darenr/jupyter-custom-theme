@@ -18,4 +18,7 @@ if($(IPython.toolbar.selector.concat(' > #run-all')).length == 0){
              'icon'    : 'fa fa-chevron-circle-right',
              'callback': function(){
                 IPython.notebook.execute_all_cells();
-             }
+            }
+        }
+    ], 'run-all');
+}
