@@ -115,7 +115,7 @@ span.ansipurple {
 }
 
 span.ansired {
-  color: #dc322f;
+  color: #008080;
 }
 
 span.ansiyellow {
@@ -123,7 +123,7 @@ span.ansiyellow {
 }
 
 div.output_stderr {
-  background-color: #dc322f;
+  background-color: #008080;
 }
 
 div.output_stderr pre {
