@@ -33,6 +33,14 @@ div#maintoolbar, div#header-container, div.header-bar {
   border-radius: 0;
 }
 
+#menubar.navbar-collapse {
+  margin-bottom: 5px;
+}
+
+.toolbar {
+  margin-top: 10px;
+}
+
 div#notebook {
   border-top: none;
 }
