@@ -58,7 +58,7 @@ div.output_prompt {
 }
 
 div.input_area {
-  border-radius: 2px;
+  border-radius: 6px !important;
   padding: 5px;
   border: none;
 }
@@ -135,11 +135,14 @@ span.ansiyellow {
 }
 
 div.output_stderr {
-  background-color: #008080;
+  background-color: #dde8e8;
+  border-radius: 4px;
 }
 
+
+
 div.output_stderr pre {
-  color: #eee8d5;
+  color: #1c1602;
   border: none;
   font-weight: normal;
 }
